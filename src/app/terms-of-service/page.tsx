@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-assets";
 import { CtaBanner } from "@/components/cta-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -14,7 +15,7 @@ export default function TermsOfServicePage() {
       <main className={styles.page}>
         <article className={styles.paper}>
           <span className={styles.badge}>
-            <Image src="/images/policy/hero-badge.svg" alt="" width={16} height={16} />
+            <Image src={publicAsset("/images/policy/hero-badge.svg")} alt="" width={16} height={16} />
             Terms of Service
           </span>
 

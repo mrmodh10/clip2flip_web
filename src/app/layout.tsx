@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
+import { publicAsset } from "@/lib/public-assets";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   title: "Clip2Flip",
   description: "Clip2Flip marketing website pages",
   icons: {
-    icon: "/favicon.ico",
+    icon: publicAsset("/favicon.ico"),
   },
 };
 

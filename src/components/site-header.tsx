@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { publicAsset } from "@/lib/public-assets";
 import styles from "./site-header.module.css";
 
 type SiteHeaderProps = {
@@ -12,7 +13,7 @@ export function SiteHeader({ active = "home" }: SiteHeaderProps) {
       <div className={styles.headerInner}>
         <Link href="/" className={styles.brand} aria-label="Clip2Flip home">
           <Image
-            src="/images/brand/logo.svg"
+            src={publicAsset("/images/brand/logo.svg")}
             alt="Clip2Flip"
             width={150}
             height={46}

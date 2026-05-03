@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-assets";
 import { CtaBanner } from "@/components/cta-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -11,21 +12,21 @@ const howItWorks = [
     title: "Sell With Video In Seconds",
     description: "Record a quick video add a price and details, and post instantly",
     points: ["Fast & Easy", "Real & Details", "Instantly Live"],
-    image: "/images/home/how-it-works-1.svg",
+    image: publicAsset("/images/home/how-it-works-1.svg"),
   },
   {
     id: "02",
     title: "Discover Deals Near You",
     description: "Browse Real Video Listing From People In Your Aera. Find What You Need, Faster.",
     points: ["Local Deals", "Smart Filter", "Save Your Favorites"],
-    image: "/images/home/how-it-works-2.svg",
+    image: publicAsset("/images/home/how-it-works-2.svg"),
   },
   {
     id: "03",
     title: "Text Sellers Instantly",
     description: "Connect Via Text With Buyers Or Sellers. Negaotive,Agree, And Make Ot Happen -- All In One Place.",
     points: ["Real Conversations", "Connect Via Text", "Buy Or Sell With Confidence"],
-    image: "/images/home/how-it-works-3.svg",
+    image: publicAsset("/images/home/how-it-works-3.svg"),
   },
 ];
 
@@ -74,7 +75,7 @@ function VideoFirstIcon() {
 function InstantListingsIcon() {
   return (
     <Image
-      src="/images/icons/Mask%20group.svg"
+      src={publicAsset("/images/icons/Mask%20group.svg")}
       alt=""
       width={40}
       height={40}
@@ -86,7 +87,7 @@ function InstantListingsIcon() {
 function LocalDiscoveryIcon() {
   return (
     <Image
-      src="/images/icons/map_icon.svg"
+      src={publicAsset("/images/icons/map_icon.svg")}
       alt=""
       width={40}
       height={40}
@@ -158,7 +159,12 @@ export default function Home() {
     <div className={styles.pageBg}>
       <main className={styles.page}>
         {/* ── Hero ── */}
-        <section className={styles.hero}>
+        <section
+          className={styles.hero}
+          style={{
+            "--hero-bg": `url(${publicAsset("/images/home/hero-bg.png")})`,
+          } as React.CSSProperties}
+        >
           <SiteHeader active="home" />
           <div className={styles.heroContent}>
             <div className={styles.heroCopy}>
@@ -175,9 +181,24 @@ export default function Home() {
             </div>
 
             <div className={styles.heroPhones}>
-              <Image src="/images/home/hero-phone-left.svg" alt="Clip2Flip app browse view" width={280} height={494} />
-              <Image src="/images/home/hero-phone-center.svg" alt="Clip2Flip listing detail" width={308} height={540} />
-              <Image src="/images/home/hero-phone-right.svg" alt="Clip2Flip profile view" width={280} height={494} />
+              <Image
+                src={publicAsset("/images/home/hero-phone-left.svg")}
+                alt="Clip2Flip app browse view"
+                width={280}
+                height={494}
+              />
+              <Image
+                src={publicAsset("/images/home/hero-phone-center.svg")}
+                alt="Clip2Flip listing detail"
+                width={308}
+                height={540}
+              />
+              <Image
+                src={publicAsset("/images/home/hero-phone-right.svg")}
+                alt="Clip2Flip profile view"
+                width={280}
+                height={494}
+              />
             </div>
           </div>
         </section>

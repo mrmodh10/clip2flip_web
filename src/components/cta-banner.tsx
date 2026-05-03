@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-assets";
 import { StoreBadges } from "./store-badges";
 import styles from "./cta-banner.module.css";
 
@@ -6,7 +7,7 @@ export function CtaBanner() {
   return (
     <section className={styles.banner}>
       <Image
-        src="/images/home/cta-bg.svg"
+        src={publicAsset("/images/home/cta-bg.svg")}
         alt=""
         fill
         className={styles.bgPhoto}
@@ -18,7 +19,7 @@ export function CtaBanner() {
         <div className={styles.qrWrap}>
           <span className={styles.qrLabel}>Or scan the QR code below</span>
           <Image
-            src="/images/home/qr-code.png"
+            src={publicAsset("/images/home/qr-code.png")}
             alt="Clip2Flip app QR code"
             width={80}
             height={80}
