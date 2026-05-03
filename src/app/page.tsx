@@ -227,7 +227,7 @@ export default function Home() {
 
         {/* ── Why Video Selling Wins ── */}
         <section className={styles.block}>
-          <span className={styles.kicker}>
+          <span className={`${styles.kicker} ${styles.servicesKicker}`}>
             <span className={styles.kickerIcon}><StarIcon /></span>
             Our Services
           </span>

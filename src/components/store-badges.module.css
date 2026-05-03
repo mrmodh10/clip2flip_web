@@ -13,13 +13,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 64px;
-  height: 64px;
-  gap: 12px;
-  padding: 0 28px;
+  min-height: 68px;
+  height: 68px;
+  gap: 10px;
+  padding: 12px 24px;
   background: #f4f7f9;
   border: 1px solid #dde5ed;
-  border-radius: 14px;
+  border-radius: 12px;
   transition: background 0.18s ease, box-shadow 0.18s ease;
   cursor: pointer;
   text-decoration: none;
@@ -56,13 +56,13 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
 }
 
 .storeIcon svg {
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
 }
 
 .storeText {
@@ -73,14 +73,14 @@
 }
 
 .storeLabel {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
   line-height: 1;
   color: #262626;
 }
 
 .storeName {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.1;
   color: #262626;

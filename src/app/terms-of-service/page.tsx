@@ -7,7 +7,9 @@ import styles from "../policy.module.css";
 export default function TermsOfServicePage() {
   return (
     <div className={styles.pageBg}>
-      <SiteHeader active="terms" />
+      <div className={styles.topNavArea}>
+        <SiteHeader active="terms" />
+      </div>
 
       <main className={styles.page}>
         <article className={styles.paper}>

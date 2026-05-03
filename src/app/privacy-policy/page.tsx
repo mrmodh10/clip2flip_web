@@ -7,7 +7,9 @@ import styles from "../policy.module.css";
 export default function PrivacyPolicyPage() {
   return (
     <div className={styles.pageBg}>
-      <SiteHeader active="privacy" />
+      <div className={styles.topNavArea}>
+        <SiteHeader active="privacy" />
+      </div>
 
       <main className={styles.page}>
         <article className={styles.paper}>

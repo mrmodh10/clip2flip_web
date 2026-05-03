@@ -3,6 +3,11 @@
   background: #fff;
 }
 
+.topNavArea {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
 .page {
   max-width: 1140px;
   margin: 0 auto;

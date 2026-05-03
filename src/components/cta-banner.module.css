@@ -7,10 +7,7 @@
   margin: 0 auto;
   border-radius: 48px;
   background: #f8f7f7;
-  box-shadow:
-    0 0.602px 3.011px 0 rgba(52, 217, 217, 0.01) inset,
-    0 2.289px 11.443px 0 rgba(52, 217, 217, 0.03) inset,
-    0 10px 50px 0 rgba(52, 217, 217, 0.14) inset;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.10);
 }
 
 /* ── Background SVG (blur + opacity + gradient mask all baked in) ── */
@@ -80,8 +77,8 @@
 
 .heading {
   font-family: var(--font-inter), Inter, sans-serif;
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 32px;
+  font-weight: 600;
   color: #000;
   line-height: 1.2;
   margin: 0;
@@ -89,7 +86,7 @@
 
 .subtitle {
   font-family: var(--font-inter), Inter, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   color: #000;
   line-height: normal;
@@ -98,7 +95,7 @@
 
 .meta {
   font-family: var(--font-inter), Inter, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   color: #666;
   text-transform: capitalize;
