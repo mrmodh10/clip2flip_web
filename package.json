@@ -1,0 +1,26 @@
+{
+  "name": "clip2flip_web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "predev": "fuser -k 3000/tcp 2>/dev/null || true; rm -rf .next",
+    "dev": "next dev --turbopack",
+    "dev:webpack": "NEXT_DISABLE_WEBPACK_CACHE=1 next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.2.4",
+    "typescript": "^5"
+  }
+}

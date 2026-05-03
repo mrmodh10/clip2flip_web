@@ -1,0 +1,137 @@
+.footer {
+  max-width: 1138px;
+  margin: 46px auto 0;
+  padding: 0 18px;
+}
+
+.emailRow {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.emailRow::before,
+.emailRow::after {
+  content: "";
+  flex: 1 1 auto;
+  border-top: 1px solid #d5dce3;
+}
+
+.emailPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  white-space: nowrap;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  color: #2f2f2f;
+  border: 1px solid #d1d8e0;
+  border-radius: 999px;
+  background: #f6f9fc;
+  padding: 12px 18px;
+  text-decoration: none;
+}
+
+.mailIcon {
+  display: inline-flex;
+  color: #2f2f2f;
+}
+
+.chips {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.chip {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #3a3a3a;
+  border: 1px solid #d1d8e0;
+  border-radius: 999px;
+  background: #f6f9fc;
+  padding: 14px 18px;
+}
+
+.bottomRow {
+  margin-top: 38px;
+  padding-top: 28px;
+  border-top: 1px solid #d5dce3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  color: #2f2f2f;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.bottomRow p {
+  margin: 0;
+}
+
+.bottomRow a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socialBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #232323;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.socialBtn svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+@media (max-width: 620px) {
+  .emailRow {
+    gap: 12px;
+  }
+
+  .emailPill {
+    font-size: 18px;
+    padding: 10px 16px;
+  }
+
+  .chip {
+    font-size: 18px;
+    padding: 10px 16px;
+  }
+
+  .bottomRow {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .socialBtn {
+    width: 42px;
+    height: 42px;
+    font-size: 15px;
+  }
+}

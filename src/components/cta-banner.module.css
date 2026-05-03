@@ -1,0 +1,166 @@
+/* ── Card ── */
+.banner {
+  position: relative;
+  overflow: hidden;
+  width: min(1138px, calc(100% - 48px));
+  height: 345px;
+  margin: 0 auto;
+  border-radius: 48px;
+  background: #f8f7f7;
+  box-shadow:
+    0 0.602px 3.011px 0 rgba(52, 217, 217, 0.01) inset,
+    0 2.289px 11.443px 0 rgba(52, 217, 217, 0.03) inset,
+    0 10px 50px 0 rgba(52, 217, 217, 0.14) inset;
+}
+
+/* ── Background SVG (blur + opacity + gradient mask all baked in) ── */
+.bgPhoto {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ── QR column (left, 519 px) ── */
+.qrColumn {
+  position: absolute;
+  left: 40px;
+  bottom: 39px;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.qrWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.qrLabel {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  line-height: 18px;
+}
+
+.qrCode {
+  width: 80px;
+  height: 80px;
+}
+
+/* ── Content column (right, 619 px) ── */
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: min(619px, calc(100% - 220px));
+  padding: 32px 40px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.heading {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: normal;
+  margin: 0;
+}
+
+.meta {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .banner {
+    width: min(1138px, calc(100% - 28px));
+    height: auto;
+    min-height: 320px;
+  }
+
+  .qrColumn {
+    left: 24px;
+    bottom: 24px;
+  }
+
+  .content {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 24px 120px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .meta {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .banner {
+    width: min(1138px, calc(100% - 18px));
+    border-radius: 28px;
+  }
+
+  .qrColumn {
+    left: 18px;
+    bottom: 18px;
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .meta {
+    font-size: 14px;
+  }
+}
