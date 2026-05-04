@@ -392,9 +392,9 @@
 .servicesGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 63px;
+  gap: 32px;
   max-width: 85%;
-  margin: 70px auto 0;
+  margin: 40px auto 0;
   padding: 0;
 }
 
@@ -470,24 +470,47 @@
 
 .servicePhoneWrap {
   flex: 0 0 clamp(190px, 38%, 265px);
-  align-self: stretch;
+  align-self: flex-end;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
   overflow: hidden;
 }
 
 .serviceImage {
-  width: auto;
-  height: calc(100% + 100px);
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   display: block;
+}
+
+@media (max-width: 1800px) and (min-width: 981px) {
+  .servicesGrid {
+    max-width: 92%;
+  }
+
+  .serviceCard {
+    max-height: 340px;
+    padding: 24px;
+    gap: 18px;
+  }
+
+  .serviceCardText {
+    gap: 18px;
+  }
+
+  .serviceCardContent {
+    gap: 16px;
+  }
+
+  .servicePhoneWrap {
+    flex-basis: clamp(220px, 43%, 290px);
+  }
 }
 
 /* ── Start Selling CTA ────────────────────────────── */
 
 .sellCta {
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 56px;
   text-align: center;
 }
@@ -720,10 +743,8 @@
   }
 
   .serviceImage {
-    width: auto;
-    height: calc(100% + 52px);
-    max-width: 100%;
-    border-radius: 0;
+    width: 100%;
+    height: auto;
   }
 }
 

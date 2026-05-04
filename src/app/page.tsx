@@ -283,10 +283,9 @@ export default function Home() {
                   <Image
                     src={service.image}
                     alt={service.title}
-                    width={265}
-                    height={566}
+                    width={302}
+                    height={335}
                     className={styles.serviceImage}
-                    unoptimized
                   />
                 </div>
               </article>
