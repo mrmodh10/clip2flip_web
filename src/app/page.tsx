@@ -172,10 +172,6 @@ export default function Home() {
               <p className={styles.subTitle}>Sell Faster With Video.</p>
               <p className={styles.highlight}>See It In Action. Buy With Confidence.</p>
               <p className={styles.micro}>
-                <span className={styles.microIcon} aria-hidden="true">
-                  <InfoIcon />
-                </span>
-                See it. Trust it. Buy it.
               </p>
               <StoreBadges />
             </div>
@@ -254,7 +250,7 @@ export default function Home() {
           </span>
           <h2>Why Video Selling Wins</h2>
           <p className={styles.sectionLead}>
-            Everything you need to list, connect, and close deals quickly — all in one simple platform.
+            Turn items into cash today. Takes less then 30 seconds
           </p>
 
           <div className={styles.servicesGrid}>
