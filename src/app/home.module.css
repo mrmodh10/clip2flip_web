@@ -733,18 +733,21 @@
   }
 
   .servicePhoneWrap {
+    flex: none;
+    width: 100%;
     padding-top: 0;
     justify-content: center;
-    min-height: 220px;
-    max-height: clamp(220px, 68vw, 300px);
-    overflow: hidden;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
     align-self: stretch;
     align-items: flex-start;
   }
 
   .serviceImage {
-    width: 100%;
+    width: min(100%, 360px);
     height: auto;
+    margin: 0 auto;
   }
 }
 
@@ -754,8 +757,8 @@
   }
 
   .servicePhoneWrap {
-    min-height: 200px;
-    max-height: clamp(200px, 72vw, 260px);
+    min-height: 0;
+    max-height: none;
   }
 
   .serviceSubtitle {
