@@ -576,6 +576,7 @@
 
   .serviceCard {
     min-height: auto;
+    max-height: none;
   }
 
   .serviceCardText {
@@ -683,6 +684,21 @@
   .serviceCard {
     flex-direction: column;
     border-radius: 28px;
+    gap: 16px;
+    padding: 24px 20px 0;
+    max-height: none;
+  }
+
+  .serviceCardText {
+    gap: 16px;
+  }
+
+  .serviceCardHeading {
+    gap: 12px;
+  }
+
+  .serviceCardContent {
+    gap: 16px;
   }
 
   .serviceTitle {
@@ -696,17 +712,42 @@
   .servicePhoneWrap {
     padding-top: 0;
     justify-content: center;
-    min-height: 0;
-    max-height: 240px;
+    min-height: 220px;
+    max-height: clamp(220px, 68vw, 300px);
     overflow: hidden;
-    align-self: center;
+    align-self: stretch;
+    align-items: flex-start;
   }
 
   .serviceImage {
-    width: 200px;
-    height: auto;
-    max-height: 240px;
-    border-radius: 28px;
+    width: auto;
+    height: calc(100% + 52px);
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .serviceCard {
+    padding: 22px 16px 0;
+  }
+
+  .servicePhoneWrap {
+    min-height: 200px;
+    max-height: clamp(200px, 72vw, 260px);
+  }
+
+  .serviceSubtitle {
+    font-size: 17px;
+  }
+
+  .featureItem {
+    gap: 12px;
+    min-height: 28px;
+  }
+
+  .featureLabel {
+    font-size: 16px;
   }
 }
 
