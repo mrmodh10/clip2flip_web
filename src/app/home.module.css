@@ -393,8 +393,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 63px;
-  max-width: 1515px;
-  margin: 80px auto 0;
+  max-width: 85%;
+  margin: 70px auto 0;
   padding: 0;
 }
 
@@ -437,8 +437,8 @@
 
 .serviceIconWrap {
   display: flex;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   flex-shrink: 0;
   border-radius: 100px;
   align-items: center;
@@ -448,12 +448,12 @@
 }
 
 .serviceIconWrap svg {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .serviceTitle {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   color: #000;
   text-transform: capitalize;
@@ -462,7 +462,7 @@
 }
 
 .serviceSubtitle {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   color: #212121;
   text-transform: capitalize;
