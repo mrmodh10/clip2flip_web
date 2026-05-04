@@ -56,25 +56,26 @@
 }
 
 .heroContent {
-  width: 100%;
+  width: 90%;
   margin: 0;
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   gap: clamp(16px, 2vw, 40px);
-  align-items: start;
+  align-items: center;
+  align-self: center;
   position: relative;
   z-index: 1;
-  padding: clamp(48px, 6vw, 120px) clamp(24px, 6vw, 130px) 0;                                                                                                                                                                                                                                                                                                                                                                                         
-  max-width: 100%;
+  padding: clamp(45px, 3.4vw, 59px) clamp(24px, 6vw, 130px) 0;
+  max-width: 90%;
 }
 
 .heroCopy {
   min-width: 0;
   position: relative;
   z-index: 2;
-  align-self: start;
+  align-self: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -96,7 +97,7 @@
 }
 
 .hero h1 {
-  font-size: clamp(28px, 4.2vw, 80px);
+  font-size: clamp(20px, 2.5vw, 50px);
   line-height: 1.05;
   font-weight: 800;
   letter-spacing: 0;
@@ -107,7 +108,7 @@
 .subTitle {
   margin-top: clamp(10px, 1.2vw, 20px);
   color: #666;
-  font-size: clamp(14px, 1.9vw, 36px);
+  font-size: clamp(13px, 1.5vw, 32px);
   font-weight: 500;
   text-transform: capitalize;
   line-height: 1.2;
@@ -116,7 +117,7 @@
 .highlight {
   margin-top: clamp(6px, 0.7vw, 10px);
   color: #ff4d3d;
-  font-size: clamp(14px, 1.9vw, 36px);
+  font-size: clamp(13px, 1.5vw, 32px);
   font-weight: 700;
   line-height: 1.2;
   text-transform: capitalize;

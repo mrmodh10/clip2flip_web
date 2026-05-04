@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/clip2flip_web",
-  assetPrefix: "/clip2flip_web/",
+  basePath: process.env.NODE_ENV === "production" ? "/clip2flip_web" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/clip2flip_web/" : "",
   images: {
     unoptimized: true,
     remotePatterns: [

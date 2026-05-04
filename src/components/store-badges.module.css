@@ -87,6 +87,13 @@
   white-space: nowrap;
 }
 
+@media (max-width: 1224px) {
+  .badges {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 980px) {
   .badges {
     flex-wrap: wrap;
@@ -95,32 +102,8 @@
 
 @media (max-width: 560px) {
   .badges {
-    width: 100%;
-    gap: 10px;
-  }
-
-  .storeBtn {
-    min-height: 56px;
-    height: 56px;
-    padding: 0 16px;
-    gap: 10px;
-  }
-
-  .storeIcon {
-    width: 28px;
-    height: 28px;
-  }
-
-  .storeIcon svg {
-    width: 28px;
-    height: 28px;
-  }
-
-  .storeLabel {
-    font-size: 11px;
-  }
-
-  .storeName {
-    font-size: 14px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

@@ -15,8 +15,8 @@ export function SiteHeader({ active = "home" }: SiteHeaderProps) {
           <Image
             src={publicAsset("/images/brand/logo.svg")}
             alt="Clip2Flip"
-            width={150}
-            height={46}
+            width={120}
+            height={30}
             priority
           />
         </Link>
