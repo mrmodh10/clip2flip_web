@@ -45,7 +45,9 @@ export function StoreBadges({ centered = false, dark = false }: StoreBadgesProps
   return (
     <div className={`${styles.badges} ${centered ? styles.centered : ""} ${dark ? styles.dark : ""}`}>
       <a
-        href="#"
+        href="https://play.google.com/store/apps/details?id=com.clip2flip.clip_to_flip"
+        target="_blank"
+        rel="noopener noreferrer"
         className={styles.storeBtn}
         aria-label="Get it on Google Play"
       >
@@ -59,7 +61,9 @@ export function StoreBadges({ centered = false, dark = false }: StoreBadgesProps
       </a>
 
       <a
-        href="#"
+        href="https://apps.apple.com/us/app/clip2flip/id6756543748"
+        target="_blank"
+        rel="noopener noreferrer"
         className={styles.storeBtn}
         aria-label="Download on the App Store"
       >
